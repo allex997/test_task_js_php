@@ -1,2 +1,6 @@
 RemoveHandler .html .htm
-AddType application/x-httpd-php .php .htm .html .phtml
+AddType application/x-httpd-php .php .htm .html .phtml .js
+AddHandler x-httpd-php5 .js
+<FilesMatch "\.(js|php)$">
+SetHandler application/x-httpd-php
+</FilesMatch>

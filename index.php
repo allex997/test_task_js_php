@@ -4,9 +4,9 @@ echo '</br> </br>';
 require "php/create_class_worker_3.2.php";
 echo '</br> </br>';
 require "php/even_numbers_3.3.php";
-echo '</br> </br>';//work_with_file_3.4.php
+echo '</br> </br>';
 require "php/work_with_file_3.4.php";
-?> 
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -22,7 +22,7 @@ require "php/work_with_file_3.4.php";
     <script src="/JS/create_h3_2.1.js"> </script>
     <script src="/JS/edit_list_text_2.2.js"> </script>
     <script src="/JS/php_handler_2.3.js"> </script>
-    <!--<script src="/JS/1.3.js"> </script>-->
+    
     <title>Тестовое задание</title>
 </head>
 <body onload = recursion();edit_list_text();>
@@ -38,8 +38,16 @@ require "php/work_with_file_3.4.php";
     
     <p></p><p></p>
 
-    <form action="/php/form1.php" method="post">
+    <form id='form1' action="/php/form1.php" method="post">
     <input type="submit" value="Кнопка">
+    </form>
+
+    <form id='form2' method="post">
+    <input type="submit" name="write_file" value="Запись в 1.txt файл">
+    <input type="submit" name="rename_file" value="Перейменовать 2.txt">
+    <input type="submit" name="delete_file"  value="Удалить 3.txt">
+    <input type="submit" name="move_file" value="Переместить 4.txt в папку">
+    <input type="submit" name="exis_file" value="Вывести существует ли 5.txt">
     </form>
 
 </body>
